@@ -9,493 +9,85 @@
   gtag('js', new Date());
   gtag('config', 'AW-18251288079');
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nic Albertson — Full-Stack / Product Engineer</title>
-<meta name="description" content="Product-minded full-stack engineer building reliable workflow automation, deployment systems, internal tools, and data products. Open to engineering roles and selected client builds.">
-<meta name="author" content="Nic Albertson">
-<meta name="keywords" content="Nic Albertson, full-stack engineer, product engineer, workflow automation, internal tools, data systems, deployment systems, Fall River Massachusetts">
-<link rel="canonical" href="https://fullstackassets.com/">
-<meta name="theme-color" content="#0B1426">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Full Stack Assets">
-<meta property="og:title" content="Nic Albertson — Full-Stack / Product Engineer">
-<meta property="og:description" content="Product-minded full-stack engineer building reliable workflow automation, deployment systems, internal tools, and data products. Open to engineering roles and selected client builds.">
-<meta property="og:url" content="https://fullstackassets.com/">
-<meta property="og:image" content="https://fullstackassets.com/assets/og-card.png">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nic Albertson — Full-Stack / Product Engineer">
-<meta name="twitter:description" content="Product-minded full-stack engineer building reliable workflow automation, deployment systems, internal tools, and data products. Open to engineering roles and selected client builds.">
-<meta name="twitter:image" content="https://fullstackassets.com/assets/og-card.png">
-
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B1426'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F2A93B'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css">
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Nic Albertson",
-  "url": "https://fullstackassets.com/",
-  "jobTitle": "Full-Stack / Product Engineer",
-  "description": "Product-minded full-stack engineer building reliable workflow, data, and deployment systems from discovery through handoff.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Fall River",
-    "addressRegion": "MA",
-    "addressCountry": "US"
-  },
-  "email": "mailto:hello@fullstackassets.com",
-  "sameAs": ["https://github.com/Full-Stack-Assets"],
-  "knowsAbout": ["Product engineering", "Workflow automation", "Data systems", "Deployment systems", "Python", "TypeScript", "React", "Next.js"]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Full Stack Assets",
-  "url": "https://fullstackassets.com/",
-  "description": "Nic Albertson is a product-minded full-stack engineer building reliable workflow, data, and deployment systems for engineering teams and selected clients.",
-  "publisher": {"@type": "Person", "name": "Nic Albertson"}
-}
-</script>
+<meta name="description" content="Product-minded full-stack engineer in Fall River, Massachusetts. Below is everything live in the workshop — systems, pilots, and tools, each one openable and tryable. Open to product-engineering roles and a limited number of selected client builds.">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111;background:#fafafa}
+header{padding:28px 20px 12px;max-width:1060px;margin:0 auto}
+h1{font-size:30px;line-height:1.15;margin:0 0 8px}
+.sub{font-size:17px;color:#444;line-height:1.5;max-width:720px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.cta a{display:inline-block;padding:10px 16px;border-radius:8px;background:#111;color:#fff;text-decoration:none;font-weight:600}
+.cta a.alt{background:#fff;color:#111;border:1px solid #ccc}
+.bar{position:sticky;top:0;background:#fafafa;border-bottom:1px solid #e3e3e3;padding:12px 20px;z-index:5}
+.bar-in{max-width:1060px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.bar input{flex:1;min-width:220px;padding:10px 12px;border:1px solid #ccc;border-radius:8px;font-size:15px}
+.bar button{padding:9px 13px;border-radius:20px;border:1px solid #ccc;background:#fff;cursor:pointer;font-size:14px}
+.bar button.on{background:#111;color:#fff;border-color:#111}
+.count{max-width:1060px;margin:14px auto 0;padding:0 20px;color:#555;font-size:14px}
+.grid{max-width:1060px;margin:0 auto;padding:16px 20px 40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:#fff;border:1px solid #e3e3e3;border-radius:12px;padding:16px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0 0 12px;color:#444;line-height:1.45;font-size:15px}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:3px 8px;border-radius:20px;margin-right:6px}
+.sys{background:#d7f0dd}.dem{background:#fff3cd}.pre{background:#e2e3f1}
+.live{color:#1a7f37}.gate{color:#9a6700}
+.card a{font-weight:600;text-decoration:none}
+footer{max-width:1060px;margin:0 auto;padding:0 20px 40px;color:#666;font-size:13px;line-height:1.6}
+.hidden{display:none}
+</style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="logo">FULL STACK <span>ASSETS</span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-    <div class="nav-links">
-      <a href="/#work">Work</a>
-      <a href="/services/">Services</a>
-      <a href="/#about">About</a>
-      <a href="/resume/">Résumé</a>
-      <a href="/#contact" class="nav-cta">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <canvas id="sky" aria-hidden="true"></canvas>
-  <div class="wrap hero-content">
-    <div class="eyebrow">Nic Albertson · Full-stack / product engineer</div>
-    <h1>I turn messy workflows into <em>reliable software.</em></h1>
-    <p class="hero-sub">I design and ship full-stack products, internal tools, and practical automation—from data ingestion and review workflows to autonomous deployment systems. I’m open to product-engineering roles and a small number of fixed-scope client builds.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-solid" href="#work">See selected work</a>
-      <a class="btn btn-ghost" href="/resume/">View résumé</a>
-      <a class="btn btn-ghost" href="/services/#inquiry">Discuss a project</a>
-    </div>
-  </div>
-  <div class="hero-coord">FALL RIVER, MA · OPEN TO ENGINEERING ROLES</div>
+<header>
+<h1>Nic Albertson — Full-Stack / Product Engineer</h1>
+<p class="sub">Product-minded full-stack engineer in Fall River, Massachusetts. Below is everything live in the workshop — systems, pilots, and tools, each one openable and tryable. Open to product-engineering roles and a limited number of selected client builds.</p>
+<div class="cta"><a href="mailto:Nicholas@fullstackassets.com">Contact</a><a class="alt" href="https://github.com/full-stack-assets">GitHub</a><a class="alt" href="https://linkedin.com/in/nsa1">LinkedIn</a></div>
 </header>
-
-<main id="main">
-
-<!-- ================= PATHS ================= -->
-<section style="border-top:none;padding-top:0">
-  <div class="wrap">
-    <div class="audience-paths rv">
-      <article class="audience-path">
-        <div class="tag">For engineering teams</div>
-        <h3>Hiring a product engineer</h3>
-        <p>I bring product judgment, full-stack execution, and clear communication to ambiguous workflow and platform problems.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-solid btn-sm" href="#work">See selected work</a>
-          <a class="btn btn-ghost btn-sm" href="/resume/">View résumé</a>
-        </div>
-      </article>
-      <article class="audience-path">
-        <div class="tag">For focused client work</div>
-        <h3>Need a system built</h3>
-        <p>I take on a small number of tightly scoped audits and build sprints for workflow, data, and deployment systems.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-solid btn-sm" href="/services/">Explore services</a>
-          <a class="btn btn-ghost btn-sm" href="/services/#inquiry">Start an inquiry</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= EVIDENCE ================= -->
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="proof rv">
-      <div><div class="n">41</div><div class="l">Sites operated by the BeyondMythos engine</div></div>
-      <div><div class="n">Hourly</div><div class="l">Automated publishing and deployment activity</div></div>
-      <div><div class="n">Tested</div><div class="l">Workflow, retry, persistence, and metrics behavior</div></div>
-      <div><div class="n">End to end</div><div class="l">Product, data, infrastructure, and handoff ownership</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SELECTED WORK ================= -->
-<section id="work">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-tag">01 — Selected work</span><h2>Systems built to hold up in use</h2></div>
-    <p class="sec-intro">Three representative builds show how I translate operational problems into tested software, with evidence separated from claims and enough documentation for another person to operate the result.</p>
-
-    <div class="featured-work">
-      <article class="asset featured-project rv">
-        <div class="asset-serial">PROJECT 01</div>
-        <h3>BeyondMythos</h3>
-        <div class="role">Autonomous deployment engine</div>
-        <div class="status-label">Production system</div>
-        <p>A multi-site publishing and deployment system with scheduled workflows, provider fallback, controlled concurrency, and operational visibility.</p>
-        <dl class="specs">
-          <div class="spec"><dt>Responsibility</dt><dd>Product direction · architecture · implementation · operations</dd></div>
-          <div class="spec"><dt>Stack</dt><dd>Git · cloud deployment · Stripe · provider APIs</dd></div>
-          <div class="spec"><dt>Proof</dt><dd>41 sites · 14 mapped domains</dd></div>
-          <div class="spec"><dt>Cadence</dt><dd>Hourly workflows</dd></div>
-          <div class="spec"><dt>Resilience</dt><dd>Provider fallback · bounded concurrency</dd></div>
-        </dl>
-        <div class="project-links">
-          <a class="asset-more" href="/case-studies/beyondmythos.html">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="asset-more live" href="https://beyondmythos.com/" target="_blank" rel="noopener">Open live system ↗</a>
-        </div>
-      </article>
-
-      <article class="asset featured-project rv">
-        <div class="asset-serial">PROJECT 02</div>
-        <h3>Tradewind DealFlow</h3>
-        <div class="role">Governed review workflow</div>
-        <div class="status-label">Private system</div>
-        <p>A typed intake and review system designed around authorization, source provenance, conflict handling, and an auditable operator workflow.</p>
-        <dl class="specs">
-          <div class="spec"><dt>Responsibility</dt><dd>Product design · workflow architecture · implementation · tests</dd></div>
-          <div class="spec"><dt>Stack</dt><dd>TypeScript · controlled storage · automated tests</dd></div>
-          <div class="spec"><dt>Proof</dt><dd>Authorized intake</dd></div>
-          <div class="spec"><dt>Evidence</dt><dd>Provenance + conflict handling</dd></div>
-          <div class="spec"><dt>Quality</dt><dd>Typed workflow · tests</dd></div>
-        </dl>
-        <div class="project-links">
-          <a class="asset-more" href="/case-studies/tradewind-dealflow.html">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <span class="project-availability">Private system · no public demo</span>
-        </div>
-      </article>
-
-      <article class="asset featured-project rv">
-        <div class="asset-serial">PROJECT 03</div>
-        <h3>TaskFlow</h3>
-        <div class="role">Durable workflow reference</div>
-        <div class="status-label">Reference implementation</div>
-        <p>A full-stack workflow implementation focused on durable execution, observable recovery behavior, and documented deployment paths.</p>
-        <dl class="specs">
-          <div class="spec"><dt>Responsibility</dt><dd>Runtime architecture · implementation · tests · deployment guidance</dd></div>
-          <div class="spec"><dt>Stack</dt><dd>TypeScript · Node.js 22 · Web APIs</dd></div>
-          <div class="spec"><dt>Proof</dt><dd>Typed workflows</dd></div>
-          <div class="spec"><dt>Runtime</dt><dd>Retries + persistence + metrics</dd></div>
-          <div class="spec"><dt>Delivery</dt><dd>Tested deployment paths</dd></div>
-        </dl>
-        <div class="project-links">
-          <a class="asset-more" href="/case-studies/taskflow.html">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <span class="project-availability">Private source · case study available</span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CAPABILITIES ================= -->
-<section id="capabilities">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-tag">02 — Capabilities</span><h2>Where I add leverage</h2></div>
-    <p class="sec-intro">I work across product decisions and implementation details, especially where workflow reliability and operator experience are as important as the interface.</p>
-    <div class="caps rv">
-      <div class="cap">
-        <h3>Product engineering.</h3>
-        <ul>
-          <li><strong>Problem framing</strong> and scope control</li>
-          <li><strong>Full-stack implementation</strong> in TypeScript and Python</li>
-          <li><strong>Internal tools</strong> built around real operator needs</li>
-          <li><strong>Clear handoff</strong> from decision to deployment</li>
-        </ul>
-      </div>
-      <div class="cap">
-        <h3>Workflow and data systems.</h3>
-        <ul>
-          <li><strong>Typed workflows</strong> with explicit state</li>
-          <li><strong>Ingestion and review</strong> with provenance</li>
-          <li><strong>Retries and persistence</strong> for durable execution</li>
-          <li><strong>Metrics</strong> that make failures inspectable</li>
-        </ul>
-      </div>
-      <div class="cap">
-        <h3>Automation and AI integration.</h3>
-        <ul>
-          <li><strong>Practical automation</strong> around repeatable work</li>
-          <li><strong>Model and provider integration</strong> with fallbacks</li>
-          <li><strong>Human review points</strong> where judgment matters</li>
-          <li><strong>Bounded execution</strong> for cost and reliability</li>
-        </ul>
-      </div>
-      <div class="cap">
-        <h3>Delivery and operations.</h3>
-        <ul>
-          <li><strong>Automated deployment</strong> and scheduled jobs</li>
-          <li><strong>Tests</strong> around failure and recovery paths</li>
-          <li><strong>Operator documentation</strong> for the next owner</li>
-          <li><strong>End-to-end ownership</strong> through handoff</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROCESS ================= -->
-<section id="process">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-tag">03 — Process</span><h2>From ambiguity to a system people can run</h2></div>
-    <p class="sec-intro">The work stays grounded in the operator’s constraint, then earns complexity through evidence.</p>
-    <div class="process rv">
-      <div class="process-step">
-        <div class="idx">01</div>
-        <div>
-          <h3>Diagnose the workflow and constraint.</h3>
-          <p>Map the current path, the decisions people make, and the failure that costs the most before choosing architecture.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="idx">02</div>
-        <div>
-          <h3>Design the smallest reliable system.</h3>
-          <p>Make state, ownership, and recovery explicit, then keep the surface area focused on the highest-value outcome.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="idx">03</div>
-        <div>
-          <h3>Ship with tests and operator documentation.</h3>
-          <p>Exercise the paths that fail in practice and document the decisions another engineer or operator needs to run the system.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="idx">04</div>
-        <div>
-          <h3>Measure failures, recoveries, and outcomes.</h3>
-          <p>Instrument what happens after launch so the next iteration responds to operating evidence instead of guesswork.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-tag">04 — About</span><h2>Product judgment with end-to-end ownership</h2></div>
-    <div class="about-grid rv">
-      <div>
-        <p>I’m <strong>Nic Albertson</strong>, a product-minded engineer in Fall River, Massachusetts. I’m most useful on work where the problem is still a little messy: an operational process needs to become software, a workflow needs to survive real failures, or a useful internal tool needs someone to own the full path from discovery to deployment.</p>
-        <p>I care about <strong>judgment and communication</strong> as much as implementation. That means asking precise questions, making tradeoffs visible, keeping stakeholders current, and producing systems that another person can understand and operate.</p>
-        <p>My work spans product, data, infrastructure, testing, and documentation. I take <strong>end-to-end ownership</strong> without treating collaboration as a handoff problem.</p>
-      </div>
-      <div>
-        <div class="fact"><span>Base</span><span>Fall River, Massachusetts</span></div>
-        <div class="fact"><span>Education</span><span>A.S., AI &amp; Software Engineering (in progress)</span></div>
-        <div class="fact"><span>Focus</span><span>Product · workflow · data systems</span></div>
-        <div class="fact"><span>Strengths</span><span>Judgment · communication · ownership</span></div>
-        <div class="fact"><span>GitHub</span><span>@Full-Stack-Assets</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SERVICES ================= -->
-<section id="services">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-tag">05 — Selected client work</span><h2>Focused ways to work together</h2></div>
-    <p class="sec-intro">For teams that need a defined outcome rather than an open-ended engagement, I reserve limited capacity for two fixed-scope formats.</p>
-    <div class="tiers rv">
-      <div class="tier">
-        <div class="tier-kind">Focused diagnosis</div>
-        <h3>Product and Systems Audit</h3>
-        <p class="tier-desc">A structured review of a product, workflow, or operating system with evidence, risks, and a prioritized path forward.</p>
-        <a class="btn btn-ghost btn-sm" href="/services/#audit">Review the audit</a>
-      </div>
-      <div class="tier flag">
-        <div class="tier-badge">Build engagement</div>
-        <div class="tier-kind">Defined outcome</div>
-        <h3>Fixed-Scope Build Sprint</h3>
-        <p class="tier-desc">A tightly scoped system shipped with tests, deployment support, and operator documentation.</p>
-        <a class="btn btn-solid btn-sm" href="/services/#build-sprint">Review the sprint</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="contact">
-  <div class="wrap rv">
-    <div class="sec-tag" style="margin-bottom:18px">06 — Contact</div>
-    <h2>Choose the conversation that fits</h2>
-    <p>I’m open to product-engineering roles and a limited number of selected client builds.</p>
-    <div class="contact-paths">
-      <a class="contact-path" href="mailto:hello@fullstackassets.com?subject=Engineering%20role">
-        <div class="tag">Roles</div>
-        <h3>Discuss a role</h3>
-        <p>Share the team, product area, and problem you need the role to own.</p>
-        <span class="go">Start the conversation →</span>
-      </a>
-      <a class="contact-path" href="/services/#inquiry">
-        <div class="tag">Client work</div>
-        <h3>Discuss a project</h3>
-        <p>Describe the workflow, constraint, and outcome behind a focused build.</p>
-        <span class="go">Open the inquiry →</span>
-      </a>
-      <a class="contact-path" href="https://github.com/Full-Stack-Assets" target="_blank" rel="noopener">
-        <div class="tag">Code</div>
-        <h3>View GitHub</h3>
-        <p>Browse public repositories and implementation work.</p>
-        <span class="go">Open GitHub →</span>
-      </a>
-      <a class="contact-path" href="/resume/">
-        <div class="tag">Background</div>
-        <h3>View résumé</h3>
-        <p>Review my experience, capabilities, and selected systems work.</p>
-        <span class="go">Open the résumé →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="foot-inner">
-    <div class="foot-grid">
-      <div class="foot-col">
-        <a href="/" class="logo">FULL STACK <span>ASSETS</span></a>
-        <p style="color:var(--dim);font-size:.85rem;margin-top:14px;max-width:32ch">Product-minded full-stack engineer building reliable workflow, data, and deployment systems.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Selected work</h4>
-        <a href="/case-studies/beyondmythos.html">BeyondMythos</a>
-        <a href="/case-studies/tradewind-dealflow.html">Tradewind DealFlow</a>
-        <a href="/case-studies/taskflow.html">TaskFlow</a>
-      </div>
-      <div class="foot-col">
-        <h4>Work together</h4>
-        <a href="/resume/">Résumé</a>
-        <a href="/services/">Services</a>
-        <a href="/services/#inquiry">Project inquiry</a>
-      </div>
-      <div class="foot-col">
-        <h4>Connect</h4>
-        <a href="/#about">About</a>
-        <a href="mailto:hello@fullstackassets.com">hello@fullstackassets.com</a>
-        <a href="https://github.com/Full-Stack-Assets" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© 2026 Full Stack Assets · Nic Albertson</span>
-      <span>Fall River, MA</span>
-    </div>
-  </div>
-</footer>
-
-<button class="totop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-
+<div class="bar"><div class="bar-in">
+<input id="q" type="search" placeholder="Search all systems, tools, and pilots&hellip;">
+<button data-cat="all" class="on">All</button>
+<button data-cat="flagship">Flagships</button>
+<button data-cat="ai-agent-pilot">Pilots</button>
+<button data-cat="vertical-tool">Tools</button>
+</div></div>
+<p class="count" id="count"></p>
+<div class="grid" id="grid"></div>
+<footer>Catalog verified 2026-10-27 by live HTTP check of every subdomain. <b>System</b> = established system with real use. <b>Demo</b> = working demo or preview — live and tryable, depth of function not claimed. <b>Preview</b> = honest static overview, not a fake demo. No customer, revenue, or adoption claims are made for any entry. Status re-checks on each rebuild; entries that stop responding are removed. Product and Systems Audit and Fixed-Scope Build Sprint available on request — contact to discuss scope.</footer>
 <script>
-/* ---------- Hero ---------- */
-(function(){
-  const canvas = document.getElementById('sky');
-  if(!canvas) return;
-  const ctx = canvas.getContext('2d');
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let W,H,stars=[],named=[];
-
-  const ASSETS = ["BEYONDMYTHOS", "TRADEWIND", "TASKFLOW", "WORKFLOWS", "DATA", "DEPLOYMENT"];
-
-  function resize(){
-    W = canvas.width = canvas.offsetWidth * devicePixelRatio;
-    H = canvas.height = canvas.offsetHeight * devicePixelRatio;
-    build();
-  }
-
-  function build(){
-    stars = [];
-    const count = Math.floor((W*H)/26000);
-    for(let i=0;i<count;i++){
-      stars.push({
-        x:Math.random()*W, y:Math.random()*H,
-        r:(Math.random()*1.1+.3)*devicePixelRatio,
-        a:Math.random()*.5+.15,
-        tw:Math.random()*Math.PI*2,
-        sp:Math.random()*.015+.004
-      });
-    }
-    named = ASSETS.map((name,i)=>{
-      const fx = .48 + (i%3)*.2 + Math.random()*.06;
-      const fy = .18 + Math.floor(i/3)*.34 + Math.random()*.1;
-      return {name, x:fx*W, y:fy*H, r:2.6*devicePixelRatio, tw:Math.random()*Math.PI*2};
-    });
-  }
-
-  let running = true;
-  document.addEventListener('visibilitychange', ()=>{
-    const wasRunning = running;
-    running = !document.hidden;
-    if(running && !wasRunning && !reduced) requestAnimationFrame(draw);
-  });
-
-  function draw(){
-    if(!running) return;
-    ctx.clearRect(0,0,W,H);
-    for(const s of stars){
-      if(!reduced) s.tw += s.sp;
-      ctx.globalAlpha = s.a + Math.sin(s.tw)*.15;
-      ctx.fillStyle = '#E9EDF5';
-      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill();
-    }
-    ctx.globalAlpha = .35;
-    ctx.strokeStyle = '#62B6CB';
-    ctx.lineWidth = .7*devicePixelRatio;
-    ctx.beginPath();
-    for(let i=0;i<named.length-1;i++){
-      ctx.moveTo(named[i].x,named[i].y);
-      ctx.lineTo(named[i+1].x,named[i+1].y);
-    }
-    ctx.stroke();
-    const fs = 10*devicePixelRatio;
-    ctx.font = `500 ${fs}px "IBM Plex Mono", monospace`;
-    for(const n of named){
-      if(!reduced) n.tw += .02;
-      const glow = 1 + Math.sin(n.tw)*.25;
-      ctx.globalAlpha = .9;
-      ctx.fillStyle = '#F2A93B';
-      ctx.beginPath(); ctx.arc(n.x,n.y,n.r*glow,0,Math.PI*2); ctx.fill();
-      ctx.globalAlpha = .55;
-      ctx.fillStyle = '#8C99B0';
-      if(canvas.offsetWidth > 640){
-        ctx.fillText(n.name, n.x + 10*devicePixelRatio, n.y + 4*devicePixelRatio);
-      }
-    }
-    ctx.globalAlpha = 1;
-    if(!reduced) requestAnimationFrame(draw);
-  }
-
-  window.addEventListener('resize', resize);
-  resize();
-  draw();
-})();
+const DATA = [{"name": "AI Receptionist", "subdomain": "receptionist", "url": "https://receptionist.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "The call you didn't miss.", "substance": "demo"}, {"name": "BuildGraph", "subdomain": "buildgraph", "url": "https://buildgraph.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Declarative Control Plane", "substance": "preview"}, {"name": "DealFlow", "subdomain": "dealflow", "url": "https://dealflow.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Bristol County Wholesale Pipeline", "substance": "preview"}, {"name": "Dependency Interpreter", "subdomain": "dependency", "url": "https://dependency.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "What are you actually depending on?", "substance": "demo"}, {"name": "EvidenceOS", "subdomain": "evidenceos", "url": "https://evidenceos.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Did the agent actually do it?", "substance": "system"}, {"name": "FieldDelta", "subdomain": "fielddelta", "url": "https://fielddelta.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Clear change-order approvals for contractors", "substance": "demo"}, {"name": "FinanceOS", "subdomain": "financeos", "url": "https://financeos.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Know exactly where your money goes", "app_url": "https://app.financeos.fullstackassets.com", "app_note": "app login (follows redirect, 200)", "substance": "system"}, {"name": "Gov Watchdog", "subdomain": "watchdog", "url": "https://watchdog.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Your town hall, translated.", "substance": "demo"}, {"name": "HostGraph", "subdomain": "hostgraph", "url": "https://hostgraph.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "What should this order actually cost?", "substance": "system"}, {"name": "HostGraph PCC", "subdomain": "hostgraph-pcc", "url": "https://hostgraph-pcc.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "HostGraph Procurement Command Center", "substance": "system"}, {"name": "Incident Narrator", "subdomain": "incident", "url": "https://incident.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Keep the stakeholder story current.", "substance": "demo"}, {"name": "Kethora", "subdomain": "kethora", "url": "https://kethora.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "the chatbot that runs your life", "substance": "system"}, {"name": "MissionGraph", "subdomain": "missiongraph", "url": "https://missiongraph.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Operational Graph Intelligence", "substance": "system"}, {"name": "No-Bid Advisor", "subdomain": "nobid", "url": "https://nobid.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Bid it \u2014 or walk away with the math to prove why.", "substance": "demo"}, {"name": "OpenManus", "subdomain": "openmanus", "url": "https://openmanus.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "", "substance": "demo"}, {"name": "RenewalLens", "subdomain": "renewallens", "url": "https://renewallens.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "What changed in this renewal?", "substance": "demo"}, {"name": "RoboticsBenchmarks", "subdomain": "roboticsbenchmarks", "url": "https://roboticsbenchmarks.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Independent Robotics Benchmark Index", "substance": "system"}, {"name": "SelfLLM", "subdomain": "selfllm", "url": "https://selfllm.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Recursively Self-Improving Language Model Research", "substance": "preview"}, {"name": "Shiva", "subdomain": "shiva", "url": "https://shiva.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Image Collection", "substance": "system"}, {"name": "SwapStudio", "subdomain": "swapstudio", "url": "https://swapstudio.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "", "substance": "system"}, {"name": "Tradewind", "subdomain": "tradewind", "url": "https://tradewind.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Does this deal pencil?", "substance": "system"}, {"name": "Wire and Logic", "subdomain": "wireandlogic", "url": "https://wireandlogic.fullstackassets.com", "category": "flagship", "status": "live", "tagline": "Wire and Logic", "substance": "system"}, {"name": "AdvisoryBoardPilot", "subdomain": "advisoryboardpilot", "url": "https://advisoryboardpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Peer Advisory Board OS for Coaches & Facilitators", "substance": "demo"}, {"name": "AgentEnginePilot", "subdomain": "agentenginepilot", "url": "https://agentenginepilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Governed 8-Agent Operating Engine for Multi-Business Groups", "substance": "demo"}, {"name": "AskPilot", "subdomain": "askpilot", "url": "https://askpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Internal Assistant (Demo)", "substance": "demo"}, {"name": "CitePilot", "subdomain": "citepilot", "url": "https://citepilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Grounded Document Q&A Agent for SMB Operations Teams", "substance": "demo"}, {"name": "ClosePilot", "subdomain": "closepilot", "url": "https://closepilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Governed AI Sales-Closing Agent for SMB Sales Teams", "substance": "demo"}, {"name": "DealerPilot", "subdomain": "dealerpilot", "url": "https://dealerpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Governed Vehicle Valuation & Buy Decisions for Car Dealers", "substance": "demo"}, {"name": "DentPilot", "subdomain": "dentpilot", "url": "https://dentpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Dental Receptionist", "substance": "demo"}, {"name": "DocPilot", "subdomain": "docpilot", "url": "https://docpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Document Processing & Approval for B2B Operations Teams", "substance": "demo"}, {"name": "EmailPilot", "subdomain": "emailpilot", "url": "https://emailpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI multi-inbox triage & drafting", "substance": "demo"}, {"name": "FranchisePilot", "subdomain": "franchisepilot", "url": "https://franchisepilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Franchise Operations Reporting OS (Demo)", "substance": "demo"}, {"name": "GuardPilot", "subdomain": "guardpilot", "url": "https://guardpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Guarded Workflow Execution for Report Prep (Demo)", "substance": "demo"}, {"name": "HouseholdPilot", "subdomain": "householdpilot", "url": "https://householdpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Private Household Operations for Busy Households & Family Offices", "substance": "demo"}, {"name": "KhmerPilot", "subdomain": "khmerpilot", "url": "https://khmerpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Bilingual Khmer/English Customer-Service Chat for Cambodia SMBs", "substance": "demo"}, {"name": "LeadCallPilot", "subdomain": "leadcallpilot", "url": "https://leadcallpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Lead-Qualification Caller", "substance": "demo"}, {"name": "LoadPilot", "subdomain": "loadpilot", "url": "https://loadpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Load Entry for Freight Brokers & 3PLs", "substance": "demo"}, {"name": "LocalOpsPilot \u2014 Governed Local-First AI Operator for Small Business", "subdomain": "localopspilot", "url": "https://localopspilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "HR-APP-0019", "substance": "demo"}, {"name": "MaintPilot", "subdomain": "maintpilot", "url": "https://maintpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Maintenance Triage for Property Managers", "substance": "demo"}, {"name": "OnboardPilot", "subdomain": "onboardpilot", "url": "https://onboardpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "WhatsApp qualification & partner-onboarding agent (demo)", "substance": "demo"}, {"name": "OrderPilot", "subdomain": "orderpilot", "url": "https://orderpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Voice Order-Taking for Online Stores & Phone-Order Businesses", "substance": "demo"}, {"name": "PermitPilot", "subdomain": "permitpilot", "url": "https://permitpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Permit & Inspection Tracking for Home-Services Contractors", "substance": "demo"}, {"name": "ProspectPilot", "subdomain": "prospectpilot", "url": "https://prospectpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI B2B prospecting & qualification", "substance": "demo"}, {"name": "RetailPilot", "subdomain": "retailpilot", "url": "https://retailpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Purchase-History Follow-Up Engine for Independent Retailers", "substance": "demo"}, {"name": "SchedPilot", "subdomain": "schedpilot", "url": "https://schedpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Governed AI Appointment Scheduling for Freight Brokerages", "substance": "demo"}, {"name": "ShopDrawPilot", "subdomain": "shopdrawpilot", "url": "https://shopdrawpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Governed AI Shop-Drawing Workflow for Construction Teams", "substance": "demo"}, {"name": "SMBAutoPilot", "subdomain": "smbautopilot", "url": "https://smbautopilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "demo-first AI kit for local businesses", "substance": "demo"}, {"name": "SupportPilot", "subdomain": "supportpilot", "url": "https://supportpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Support-Ticket Drafting for Shopify Stores on LiveAgent", "substance": "demo"}, {"name": "TaxSalePilot", "subdomain": "taxsalepilot", "url": "https://taxsalepilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Tax-Sale Research & Deal Ranking for Real-Estate Investors", "substance": "demo"}, {"name": "TeamsPilot", "subdomain": "teamspilot", "url": "https://teamspilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "AI Receptionist for Microsoft Teams", "substance": "demo"}, {"name": "TextBackPilot", "subdomain": "textbackpilot", "url": "https://textbackpilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Missed-Call Text-Back for Plumbing, Roofing & Home Services", "substance": "demo"}, {"name": "VisibilityPilot", "subdomain": "visibilitypilot", "url": "https://visibilitypilot.fullstackassets.com", "category": "ai-agent-pilot", "status": "live", "tagline": "Safeguarded Content & Search-Visibility Engine for Established Businesses", "substance": "demo"}, {"name": "ARBeacon", "subdomain": "arbeacon", "url": "https://arbeacon.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Clear receivables, calmer cash flow", "substance": "demo"}, {"name": "ArtHandoff", "subdomain": "arthandoff", "url": "https://arthandoff.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Artwork loans with a clear handoff trail", "substance": "demo"}, {"name": "BeanYield", "subdomain": "beanyield", "url": "https://beanyield.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "", "substance": "demo"}, {"name": "BenchSignal", "subdomain": "benchsignal", "url": "https://benchsignal.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Less phone tag. More bench time.", "substance": "demo"}, {"name": "Billiondollarbrief", "subdomain": "billiondollarbrief", "url": "https://billiondollarbrief.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "", "substance": "demo"}, {"name": "BinTally", "subdomain": "bintally", "url": "https://bintally.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every box. Every dollar.", "substance": "demo"}, {"name": "BlockPace", "subdomain": "blockpace", "url": "https://blockpace.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Hotel room-block pickup and cutoff tracking", "substance": "demo"}, {"name": "BookPulse", "subdomain": "bookpulse", "url": "https://bookpulse.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Daily Client Financial Pulse for Bookkeepers", "substance": "demo"}, {"name": "BounceGate", "subdomain": "bouncegate", "url": "https://bouncegate.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Rental readiness", "substance": "demo"}, {"name": "CAMPivot", "subdomain": "campivot", "url": "https://campivot.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Lease CAM review register", "substance": "demo"}, {"name": "CaterCount", "subdomain": "catercount", "url": "https://catercount.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Final counts without the scramble", "substance": "demo"}, {"name": "CertRoster", "subdomain": "certroster", "url": "https://certroster.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Workforce credential review without spreadsheet drift", "substance": "demo"}, {"name": "CleanResolve", "subdomain": "cleanresolve", "url": "https://cleanresolve.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every finding deserves a verified finish", "substance": "demo"}, {"name": "CommissionDock", "subdomain": "commissiondock", "url": "https://commissiondock.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Review commissions before payout", "substance": "demo"}, {"name": "ConsignMint", "subdomain": "consignmint", "url": "https://consignmint.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Consignor Settlement Reconciliation", "substance": "demo"}, {"name": "CordHaven", "subdomain": "cordhaven", "url": "https://cordhaven.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Firewood delivery operations", "substance": "demo"}, {"name": "CrateCredit", "subdomain": "cratecredit", "url": "https://cratecredit.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "CSA Pickup and Credit Ledger", "substance": "demo"}, {"name": "CreditChalk", "subdomain": "creditchalk", "url": "https://creditchalk.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Private lesson credit ledger", "substance": "demo"}, {"name": "DeductLane", "subdomain": "deductlane", "url": "https://deductlane.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "See every deduction. Follow every dollar.", "substance": "demo"}, {"name": "DehuLedger", "subdomain": "dehuledger", "url": "https://dehuledger.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Equipment Day Ledger", "substance": "demo"}, {"name": "DepositOrbit", "subdomain": "depositorbit", "url": "https://depositorbit.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Private deposit ledger", "substance": "demo"}, {"name": "DisputeDesk", "subdomain": "disputedesk", "url": "https://disputedesk.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Chargeback case tracking", "substance": "demo"}, {"name": "DockDues", "subdomain": "dockdues", "url": "https://dockdues.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Stop leaving detention money on the dock", "substance": "demo"}, {"name": "DockTally", "subdomain": "docktally", "url": "https://docktally.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Know what ships. Catch what slips.", "substance": "demo"}, {"name": "FirHold", "subdomain": "firhold", "url": "https://firhold.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "", "substance": "demo"}, {"name": "FiringFolio", "subdomain": "firingfolio", "url": "https://firingfolio.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every piece has a place", "substance": "demo"}, {"name": "FitCheck", "subdomain": "fitcheck", "url": "https://fitcheck.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "", "substance": "demo"}, {"name": "FlueFolio", "subdomain": "fluefolio", "url": "https://fluefolio.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Never lose a finding to a paper slip again", "substance": "demo"}, {"name": "FoundShift", "subdomain": "foundshift", "url": "https://foundshift.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every lost item. One clear handoff.", "substance": "demo"}, {"name": "FreightProof", "subdomain": "freightproof", "url": "https://freightproof.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Freight damage case tracking", "substance": "demo"}, {"name": "GrantGauge", "subdomain": "grantgauge", "url": "https://grantgauge.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Grant milestones and reporting tracker", "substance": "demo"}, {"name": "GreaseGap", "subdomain": "greasegap", "url": "https://greasegap.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every gallon, accounted for", "substance": "demo"}, {"name": "HandoffGrid", "subdomain": "handoffgrid", "url": "https://handoffgrid.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Nothing lost between shifts", "substance": "demo"}, {"name": "HaulDelta", "subdomain": "hauldelta", "url": "https://hauldelta.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Waste invoice variance review", "substance": "demo"}, {"name": "HeatTicket", "subdomain": "heatticket", "url": "https://heatticket.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "", "substance": "demo"}, {"name": "HemQueue", "subdomain": "hemqueue", "url": "https://hemqueue.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "From intake to pickup", "substance": "demo"}, {"name": "InkSignoff", "subdomain": "inksignoff", "url": "https://inksignoff.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Artwork approval without inbox chaos", "substance": "demo"}, {"name": "KegBalance", "subdomain": "kegbalance", "url": "https://kegbalance.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Keg custody and deposit reconciliation", "substance": "demo"}, {"name": "KeyOrbit", "subdomain": "keyorbit", "url": "https://keyorbit.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every key accounted for", "substance": "demo"}, {"name": "LayupLane", "subdomain": "layuplane", "url": "https://layuplane.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Winter boatyard haul-out board", "substance": "demo"}, {"name": "LeaverLedger", "subdomain": "leaverledger", "url": "https://leaverledger.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Offboarding access checklist", "substance": "demo"}, {"name": "LinenGauge", "subdomain": "linengauge", "url": "https://linengauge.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Linen ledger", "substance": "demo"}, {"name": "LotClock", "subdomain": "lotclock", "url": "https://lotclock.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Impound Operations Ledger", "substance": "demo"}, {"name": "MarkerLane", "subdomain": "markerlane", "url": "https://markerlane.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Installation Readiness", "substance": "demo"}, {"name": "MatQuote", "subdomain": "matquote", "url": "https://matquote.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Stop leaking margin on every frame job", "substance": "demo"}, {"name": "MeterTrail", "subdomain": "metertrail", "url": "https://metertrail.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Know what's due before it breaks", "substance": "demo"}, {"name": "PalletQuay", "subdomain": "palletquay", "url": "https://palletquay.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Track every pallet exchange. Know who owes whom.", "substance": "demo"}, {"name": "PanelYield", "subdomain": "panelyield", "url": "https://panelyield.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Cut Lists & Sheet Estimates", "substance": "demo"}, {"name": "PawExpiry", "subdomain": "pawexpiry", "url": "https://pawexpiry.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Pet vaccine date review", "substance": "demo"}, {"name": "PayoutLens", "subdomain": "payoutlens", "url": "https://payoutlens.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Your marketplace says you sold $X. Your bank got $Y. Where did the rest go?", "substance": "demo"}, {"name": "PlowGate", "subdomain": "plowgate", "url": "https://plowgate.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Preflight Readiness", "substance": "demo"}, {"name": "PrepLoss", "subdomain": "preploss", "url": "https://preploss.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Find the cost between prep and plate", "substance": "demo"}, {"name": "ProofSlip", "subdomain": "proofslip", "url": "https://proofslip.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every delivery handoff, accounted for", "substance": "demo"}, {"name": "PurveyorDesk", "subdomain": "purveyordesk", "url": "https://purveyordesk.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Filing Handoff Ledger", "substance": "demo"}, {"name": "QuoteNudge", "subdomain": "quotenudge", "url": "https://quotenudge.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Stop Losing Jobs to No Follow-Up", "substance": "demo"}, {"name": "RebateQuay", "subdomain": "rebatequay", "url": "https://rebatequay.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Supplier rebate reconciliation", "substance": "demo"}, {"name": "RecipeTally", "subdomain": "recipetally", "url": "https://recipetally.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "The Kitchen Numbers Desk", "substance": "demo"}, {"name": "RecitalRack", "subdomain": "recitalrack", "url": "https://recitalrack.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every costume, one calm place", "substance": "demo"}, {"name": "RenewalHarbor", "subdomain": "renewalharbor", "url": "https://renewalharbor.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Know the next charge before it arrives", "substance": "demo"}, {"name": "RetainSignal", "subdomain": "retainsignal", "url": "https://retainsignal.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Keep track of the last dollars owed", "substance": "demo"}, {"name": "ReturnDock", "subdomain": "returndock", "url": "https://returndock.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Returns without the chaos", "substance": "demo"}, {"name": "RosterPatch", "subdomain": "rosterpatch", "url": "https://rosterpatch.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Shift coverage register", "substance": "demo"}, {"name": "RouteMargin", "subdomain": "routemargin", "url": "https://routemargin.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Job cost clarity", "substance": "demo"}, {"name": "RugTag", "subdomain": "rugtag", "url": "https://rugtag.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Where is my rug? Now you have the answer.", "substance": "demo"}, {"name": "SiteDiary", "subdomain": "sitediary", "url": "https://sitediary.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Daily jobsite field reports", "substance": "demo"}, {"name": "SLAClock", "subdomain": "slaclock", "url": "https://slaclock.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every support promise in view", "substance": "demo"}, {"name": "SlotRelay", "subdomain": "slotrelay", "url": "https://slotrelay.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Turn canceled salon appointments into confirmed fills", "substance": "demo"}, {"name": "SponsorSlip", "subdomain": "sponsorslip", "url": "https://sponsorslip.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every promise, every proof", "substance": "demo"}, {"name": "StallSlate", "subdomain": "stallslate", "url": "https://stallslate.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Keep every stall accounted for", "substance": "demo"}, {"name": "StockWake", "subdomain": "stockwake", "url": "https://stockwake.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Inventory cash recovery", "substance": "demo"}, {"name": "StormLedger", "subdomain": "stormledger", "url": "https://stormledger.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Clear the lot. Keep the record.", "substance": "demo"}, {"name": "SwapShelf", "subdomain": "swapshelf", "url": "https://swapshelf.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Every tire set, exactly where it belongs", "substance": "demo"}, {"name": "SwipeVariance", "subdomain": "swipevariance", "url": "https://swipevariance.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Merchant Fee Clarity", "substance": "demo"}, {"name": "The Narrows", "subdomain": "quahog", "url": "https://quahog.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "South Coast", "substance": "system"}, {"name": "TintYield", "subdomain": "tintyield", "url": "https://tintyield.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Film usage, visible margins", "substance": "demo"}, {"name": "ToonFactory", "subdomain": "toonfactory", "url": "https://toonfactory.fullstackassets.com", "category": "vertical-tool", "status": "login-gated", "tagline": "Login \u2014 ToonFactory", "substance": "demo"}, {"name": "TurnSlate", "subdomain": "turnslate", "url": "https://turnslate.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Ready units, visible work", "substance": "demo"}, {"name": "VarianceNest", "subdomain": "variancenest", "url": "https://variancenest.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Catch supplier invoice differences before payment", "substance": "demo"}, {"name": "VendorClock", "subdomain": "vendorclock", "url": "https://vendorclock.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Vendor expiry tracking", "substance": "demo"}, {"name": "VenueHold", "subdomain": "venuehold", "url": "https://venuehold.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Event hold register", "substance": "demo"}, {"name": "WarrantyLoop", "subdomain": "warrantyloop", "url": "https://warrantyloop.fullstackassets.com", "category": "vertical-tool", "status": "live", "tagline": "Close the callback loop", "substance": "demo"}];
+const grid = document.getElementById('grid');
+const count = document.getElementById('count');
+const q = document.getElementById('q');
+let cat = 'all';
+function badge(e){
+  const s = e.substance === 'system' ? ['sys','System']
+    : e.substance === 'preview' ? ['pre','Preview'] : ['dem','Demo'];
+  const l = e.status === 'login-gated' ? '<span class="gate">login required</span>'
+    : '<span class="live">live</span>';
+  return '<span class="badge '+s[0]+'">'+s[1]+'</span> '+l;
+}
+function render(){
+  const needle = q.value.trim().toLowerCase();
+  const list = DATA.filter(e =>
+    (cat === 'all' || e.category === cat) &&
+    (!needle || (e.name+' '+(e.tagline||'')).toLowerCase().includes(needle)));
+  count.textContent = list.length + ' of ' + DATA.length + ' shown';
+  grid.innerHTML = list.map(e =>
+    '<div class="card"><h3>' + esc(e.name) + '</h3>' +
+    (e.tagline ? '<p>' + esc(e.tagline) + '</p>' : '') +
+    '<div style="margin-bottom:10px">' + badge(e) + '</div>' +
+    '<a href="' + esc(e.url) + '">Open &rarr;</a></div>').join('') ||
+    '<p>No matches. Try a different search.</p>';
+}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+document.querySelectorAll('.bar button[data-cat]').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.bar button[data-cat]').forEach(x => x.classList.remove('on'));
+  b.classList.add('on'); cat = b.dataset.cat; render();
+});
+q.oninput = render;
+render();
 </script>
-<script src="/assets/site.js"></script>
 </body>
 </html>
