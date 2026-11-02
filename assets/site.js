@@ -73,35 +73,6 @@
     });
   });
 
-  function composeInquiry(form) {
-    const data = new FormData(form);
-    const lines = [
-      "PROJECT INQUIRY",
-      "",
-      `Name: ${data.get("name") || ""}`,
-      `Email: ${data.get("email") || ""}`,
-      `Company: ${data.get("company") || ""}`,
-      `Current system: ${data.get("current-system") || ""}`,
-      `Users: ${data.get("users") || ""}`,
-      `What is failing: ${data.get("problem") || ""}`,
-      `Needed outcome: ${data.get("outcome") || ""}`,
-      `Timeline or constraint: ${data.get("timeline") || ""}`,
-    ];
-    return lines.join("\n");
-  }
-
-  document.querySelectorAll("[data-inquiry-form]").forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const status = form.querySelector("[aria-live]");
-      if (!form.reportValidity()) return;
-      const subject = encodeURIComponent("Project inquiry — Full Stack Assets");
-      const body = encodeURIComponent(composeInquiry(form));
-      if (status) status.textContent = "Opening your email app with the project details.";
-      window.location.href = `mailto:hello@fullstackassets.com?subject=${subject}&body=${body}`;
-    });
-  });
-
   document.querySelectorAll("[data-print-resume]").forEach((button) => {
     button.addEventListener("click", () => window.print());
   });
