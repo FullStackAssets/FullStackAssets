@@ -22,6 +22,9 @@ class HomepageContractTests(unittest.TestCase):
             self.assertRegex(PAGE, r'<button[^>]*data-cat="' + key + r'"[^>]*aria-pressed=')
         self.assertIn("x.setAttribute('aria-pressed'", PAGE)
 
+    def test_document_head_has_no_literal_escape_newlines(self):
+        self.assertNotIn(r"\\n", PAGE.split("</style>", 1)[0])
+
     def test_catalog_records_preserved(self):
         self.assertEqual(len(re.findall(r'"category": "(?:flagship|ai-agent-pilot|vertical-tool)"', PAGE)), 133)
 
